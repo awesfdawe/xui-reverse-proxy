@@ -53,19 +53,19 @@ This script is designed to quickly and easily set up a hidden proxy server, with
 
 To begin configuring the server, simply run the following command in a terminal:
 ```sh
-bash <(curl -Ls https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-server.sh)
+bash <(curl -Ls https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-server.sh)
 ```
 
 ### Installing the bot:
 
 To install the bot on the server, just run the base script with the -bot flag:
 ```sh
-bash <(https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-server.sh) -bot
+bash <(https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-server.sh) -bot
 ```
 
 ### Selecting and installing a random template for the website:
 ```sh
-bash <(curl -Ls https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/xui-rp-random-site.sh)
+bash <(curl -Ls https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/xui-rp-random-site.sh)
 ```
 
 The script will then prompt you for the necessary configuration information:

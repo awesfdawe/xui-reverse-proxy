@@ -540,7 +540,7 @@ dns_adguard_home() {
     HASH=$(htpasswd -B -C 10 -n -b ${USERNAME} ${PASSWORD} | cut -d ":" -f 2)
 
     rm -f AdGuardHome/AdGuardHome.yaml
-    while ! wget -q --progress=dot:mega --timeout=30 --tries=10 --retry-connrefused "https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/adh/AdGuardHome.yaml" -O AdGuardHome/AdGuardHome.yaml; do
+    while ! wget -q --progress=dot:mega --timeout=30 --tries=10 --retry-connrefused "https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/adh/AdGuardHome.yaml" -O AdGuardHome/AdGuardHome.yaml; do
         warning " $(text 38) "
         sleep 3
     done
@@ -666,7 +666,7 @@ disable_ipv6() {
 ### WARP ###
 warp() {
     info " $(text 43) "
-    bash <(curl -Ls https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/warp/xui-rp-warp.sh)
+    bash <(curl -Ls https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/warp/xui-rp-warp.sh)
     tilda "$(text 10)"
 }
 
@@ -867,7 +867,7 @@ EOF
 }
 
 random_site() {
-    bash <(curl -Ls https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/xui-rp-random-site.sh)
+    bash <(curl -Ls https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/xui-rp-random-site.sh)
 }
 
 generate_keys() {
@@ -1047,7 +1047,7 @@ panel_installation() {
     info " $(text 46) "
     touch /usr/local/xui-rp/reinstallation_check
 
-    while ! wget -q --progress=dot:mega --timeout=30 --tries=10 --retry-connrefused https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/database/x-ui.db; do
+    while ! wget -q --progress=dot:mega --timeout=30 --tries=10 --retry-connrefused https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/database/x-ui.db; do
         warning " $(text 38) "
         sleep 3
     done
@@ -1171,7 +1171,7 @@ EOF
 install_xuibot() {
     if [[ "$1" == "-bot" ]]; then
         info " $(text 57) "
-        bash <(curl -Ls https://github.com/cortez24rus/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-bot.sh) "$BOT_TOKEN" "$AID" "$DOMAIN"
+        bash <(curl -Ls https://github.com/awesfdawe/xui-reverse-proxy/raw/refs/heads/main/xui-rp-install-bot.sh) "$BOT_TOKEN" "$AID" "$DOMAIN"
     fi
 }
 
